@@ -1,0 +1,59 @@
+{
+  "name": "gatsby-theme-novela-workspace",
+  "private": true,
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn workspace reckoning build",
+    "dev": "yarn start",
+    "lint": "eslint --ignore-path .gitignore .",
+    "start": "yarn workspace reckoning develop",
+    "latest": "yarn upgrade-interactive --latest"
+  },
+  "workspaces": [
+    "@narative/gatsby-theme-novela",
+    "reckoning"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.1.0",
+    "@commitlint/travis-cli": "^8.3.5",
+    "eslint": "^6.2.2",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-unicorn": "^18.0.1",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "airbnb-base",
+      "plugin:prettier/recommended",
+      "plugin:unicorn/recommended"
+    ],
+    "env": {
+      "browser": false
+    },
+    "overrides": [],
+    "plugins": [],
+    "rules": {
+      "unicorn/no-abusive-eslint-disable": 0,
+      "unicorn/filename-case": [
+        "error",
+        {
+          "cases": {
+            "camelCase": true,
+            "kebabCase": true
+          }
+        }
+      ]
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
+  }
+}
