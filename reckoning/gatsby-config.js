@@ -3,10 +3,10 @@ require("dotenv").config();
 const siteMetadata = {
   title: `reckoning.dev`,
   name: `reckoning.dev`,
-  siteUrl: `https://reckoning.dev/`,
-  description: `Sadanand is a scientist, programmer, engineer, and writer who loves explaining complex concepts in simple words to people of all skill levels.`,
+  siteUrl: `https://blog-temp.netlify.app/`,
+  description: `Un blog sobre relaciones humanas. Las más complicadas con diferencia.`,
   hero: {
-    heading: `Notes on AI, healthcare, Programming and Food!`,
+    heading: `Un blog sobre relaciones humanas. Las más complicadas con diferencia.`,
     maxWidth: 1052,
   },
   social: [
