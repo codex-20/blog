@@ -11,7 +11,7 @@
   "dependencies": {
     "@narative/gatsby-theme-novela": "^0.13.1",
     "dotenv": "^8.0.0",
-    "gatsby": "^2.20.18",
+    "gatsby": "^4.25.7",
     "gatsby-plugin-google-tagmanager": "^2.2.3",
     "gatsby-plugin-mailchimp": "^5.1.2",
     "gatsby-plugin-manifest": "^2.2.4",
